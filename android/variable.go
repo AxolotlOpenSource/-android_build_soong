@@ -20,7 +20,7 @@ import (
 	"runtime"
 	"strings"
 
-	"xperience/soong/android"
+	"axolotl/soong/android"
 
 	"github.com/google/blueprint/proptools"
 )
@@ -155,8 +155,8 @@ type variableProperties struct {
 			Cflags []string
 		}
 
-		// include XPerience variables
-		Xperience android.Product_variables
+		// include axolotl variables
+		Axolotl android.Product_variables
 
 	} `android:"arch_variant"`
 }
@@ -326,8 +326,8 @@ type productVariables struct {
 
 	TargetFSConfigGen []string `json:",omitempty"`
 
-	// include XPerience variables
-	Xperience android.ProductVariables
+	// include Axolotl variables
+	Axolotl android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
